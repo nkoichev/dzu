@@ -5,7 +5,6 @@ def do_stuff_on_page_load():
     st.set_page_config(layout="wide", page_title="VEAS BG")
 do_stuff_on_page_load()
 from datetime import date, datetime, timedelta
-
 from urllib.error import URLError
 import numpy as np
 import matplotlib.pyplot as plt
@@ -35,7 +34,6 @@ dnes = datetime.today().strftime('%d.%m.%Y')
 dnes_weekday = datetime.today().strftime('%A')
 dnes_weekday_bg = {'Monday': 'Понеделник', 'Tuesday': 'Вторник', 'Wednesday': 'Сряда', 'Thursday': 'Четвъртък', 'Friday': 'Петък', 'Saturday': 'Събота', 'Sunday': 'Неделя'}
 den = dnes_weekday_bg[dnes_weekday]
-
 
 with st.sidebar:
     choose = option_menu(f'{dnes}, {den}', ['Портфейл на поръчките'],
@@ -70,9 +68,7 @@ if choose == 'Портфейл на поръчките':
     st.write('<p class="font">Портфейл на поръчките</p>', unsafe_allow_html=True)
 
     file_POO = st.file_uploader("Избери CSV файла с продажбите:", type=["csv"])
-    
-
-    
+   
     if file_POO is not None:
 
         df_sales = load_sales()
