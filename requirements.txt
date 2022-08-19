@@ -1,0 +1,16 @@
+altair
+pandas
+streamlit
+xlrd
+matplotlib
+typing_extensions
+pyjokes
+openpyxl
+openexchangerate
+xlsxwriter
+holidays
+plotly
+translate
+streamlit_option_menu
+streamlit-aggrid
+isoweek
