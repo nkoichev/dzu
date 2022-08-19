@@ -9,15 +9,15 @@ from urllib.error import URLError
 import numpy as np
 import matplotlib.pyplot as plt
 import typing_extensions
-import pyjokes
-import jokes
+# import pyjokes
+# import jokes
 import os
 import time
 from os.path import getmtime
-from openexchangerate import OpenExchangeRates
-from other import other
-from get_invent_3021 import invent_opis_3021
-from get_invent_303 import invent_opis_303
+# from openexchangerate import OpenExchangeRates
+# from other import other
+# from get_invent_3021 import invent_opis_3021
+# from get_invent_303 import invent_opis_303
 import xlsxwriter
 import xlrd
 import plotly.express as px
@@ -30,6 +30,7 @@ import io
 import itertools
 from st_aggrid import AgGrid, GridUpdateMode, GridOptionsBuilder, JsCode
 from isoweek import Week
+
 dnes = datetime.today().strftime('%d.%m.%Y')
 dnes_weekday = datetime.today().strftime('%A')
 dnes_weekday_bg = {'Monday': 'Понеделник', 'Tuesday': 'Вторник', 'Wednesday': 'Сряда', 'Thursday': 'Четвъртък', 'Friday': 'Петък', 'Saturday': 'Събота', 'Sunday': 'Неделя'}
